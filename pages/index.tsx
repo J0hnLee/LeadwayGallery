@@ -19,14 +19,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-<<<<<<< Updated upstream
       <main className={styles.main}>
         <div className={styles.description}>
           <Link href="/api/auth/login">Login</Link>
           <Link href="/api/auth/logout">Logout</Link>
           {user && (
       <div>
-        <img src={user.picture} alt={user.name} />
+        <Image src={user.picture?? ""} alt={user.name??""} width={100} height={100}/>
         <h2>{user.name}</h2>
         <p>{user.email}</p>
       </div>
@@ -35,12 +34,6 @@ export default function Home() {
       <Link href="/secret">秘密</Link>      
       </div>
       </main>
-=======
-      <div >
-          <p>logo</p>
-          <p>關於</p>
-      </div>
->>>>>>> Stashed changes
     </>
   )
 }
