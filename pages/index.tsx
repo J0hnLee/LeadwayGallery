@@ -5,7 +5,7 @@ import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import { useUser } from '@auth0/nextjs-auth0/client';
 
-const inter = Inter({ subsets: ['latin'] })
+//const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const {user, error, isLoading} = useUser();
@@ -19,6 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+<<<<<<< Updated upstream
       <main className={styles.main}>
         <div className={styles.description}>
           <Link href="/api/auth/login">Login</Link>
@@ -34,6 +35,12 @@ export default function Home() {
       <Link href="/secret">秘密</Link>      
       </div>
       </main>
+=======
+      <div >
+          <p>logo</p>
+          <p>關於</p>
+      </div>
+>>>>>>> Stashed changes
     </>
   )
 }
